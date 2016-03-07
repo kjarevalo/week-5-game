@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Boybands Trivia Game!</title>
+	 <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript">
+
+$( document ).ready(function(){
+
+ var questions = [
+      //Question 1
+      {
+        answer: 1,
+        question: 'Who is larger than life?',
+        options: ['NSync', 'LFO', 'BackStreetBoys']
+
+      },
+
+      //Question 2  
+      {
+        answer: 0,
+        question: 'Who has Liquid Dreams?',
+        options: ['OTown', '98 Degrees', 'G Unit']
+
+      },
+
+      //Question 3
+      {
+        answer: 1,
+        question: 'Who likes girls that wear Abercrombie and Fitch?',
+        options: ['LFO', 'New Kids On The Block', 'Young Money']
+
+      }
+    ];
+
+    function popUpQuestion(){
+
+    	for(var i = 0); i questions.length; i++) {
+
+    		$("#game").append(questions[i].question + " <br /> <br/> <br />");
+    	}
+    }
+
+ });
+
+</script>
+</body>
+</html>
